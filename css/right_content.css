@@ -1,0 +1,195 @@
+#slider
+{
+    border-radius: 20px;
+    width: 100%;
+    height: 40%;
+    
+}
+
+#que{
+    
+    text-align: center;
+    font-weight: 1000;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    font-family: 'Bangers', cursive;
+}
+#grd{
+
+    text-align: center;
+    font-weight: 1000;
+    margin-bottom: 18px;
+    margin-top: 2px;
+    color:antiquewhite;
+    font-family: 'Bangers', cursive;
+
+}
+.vid_area{
+    margin-top: 10%;
+    margin-left: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+
+.vid_area ul
+{
+    position:unset;
+    margin-left: -50px;
+    transform: translateX(0%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    margin-top: 10px;
+
+}
+
+.vid_area ul li{
+    list-style-type: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+/*styling for grading*/
+.container{
+    background-color: #111;
+    width: 400px;
+    height: 550px;
+    padding: 20px 30px;
+    border: 5px solid rgb(247, 243, 243);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    margin-top: 5%;
+    
+    margin-left: 50px;
+}
+
+.container .star input{
+    display: none;
+}
+
+.star label{
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    float:right;
+    transition: all 0.2s ease;
+
+}
+
+
+
+#emp_img{
+
+    box-shadow: 0 4px 8px 0 rgba(58, 56, 56, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    float: left;
+    margin-top:45px;
+    margin-left:20%;
+    display: block;
+}
+#name
+{
+    text-align: center; padding: 5px; float: left;margin-left:25%; margin-top: 4px;
+}
+
+ input:not(:checked) ~ label:hover, input:not(:checked) ~ label:hover ~ label
+{
+    color:#fd4; 
+}
+form header{
+    width:100%;
+    font-size: 25px;
+    font-weight: 500;
+    color: #fe7;
+    margin: 5px 0 20px 0;
+    text-align: center;
+    transition:all 0.2s ease;
+}
+
+input#rate-5:checked ~ label{
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+}
+
+input#rate-4:checked ~ label{
+    color: #fe7;
+}
+input#rate-3:checked ~ label{
+    color: #fe7;
+}
+input#rate-2:checked ~ label{
+    color: #fe7;
+}
+input#rate-1:checked ~ label{
+    color: #fe7;
+}
+#rate-1:checked ~ form header:before{
+    content: "Poor";
+}
+#rate-2:checked ~ form header:before{
+    content: "Not Poor";
+}
+#rate-3:checked ~ form header:before{
+    content: "Average";
+}
+#rate-4:checked ~ form header:before{
+    content: "Good";
+}
+#rate-5:checked ~ form header:before{
+    content: "Excellent";
+}
+
+form .textarea{
+    height:100px;
+    width:100%;
+    overflow: hidden;
+    
+    
+}
+
+form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    resize: none;
+    outline: none;
+    color: #eee;
+    border: 1px solid #333;
+    background: #222;
+    padding: 10px;
+    font-size: 17px;
+
+}
+
+form .btn{
+    width: 100%;
+    height: 50px;
+    margin:15px 0;
+    bottom: 30px;
+}
+form .btn button{
+  outline: none;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #444;
+  background: #222;
+  color: #eee;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  
+
+}
+
+form .btn button:hover{
+    background: #1b1b1b;
+    color: #eee;
+
+}
+
+.table td .table th{
+    padding: 20px;
+}
