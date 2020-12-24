@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f8b8d53ef4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Black+Ops+One&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link href="css/right_content.css" rel="stylesheet" type="text/css">
+    <title>video and grade</title>
+    <style>
+        body{
+            background-color: #88bef5;
+        }
+    </style>
+</head>
+<body>
+ <div class="container-md">
+
+    <div class="col-lg-7 col-md-7 col-sm-12">
+        <div class="vid_area">
+            <h1 id="que"><u>Questions</u></h1>
+            
+            <ul >
+                <li onclick="prev()"><button>&#8249;</button></li>
+                <li onclick="slidervid('./media/vid1.mp4',1)"><button name="str1" type="button" class="btn btn-light" >Q1</button></li>
+                <li onclick="slidervid('./media/vid2.mp4',2)"><button name="str2" type="button" class="btn btn-light" >Q2</button></li>
+                <li onclick="slidervid('./media/vid3.mp4',3)"><button name="str3" type="button" class="btn btn-light" >Q3</button></li>
+                <li onclick="slidervid('./media/vid4.mp4',4)"><button name="str4" type="button" class="btn btn-light" >Q4</button></li>
+                <li onclick="slidervid('./media/vid5.mp4',5)"><button name="str5" type="button" class="btn btn-light" >Q5</button></li>            
+                <li onclick="next()"><button id="redirect">&#8250;</button></li>
+            </ul>
+            <div class="shadow p-3 mb-5 bg-white rounded">
+                <video  id="slider"  class="thumbnail" controls >
+                   <source src="vid1.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-lg-5 col-md-5 col-sm-12 "  >
+        
+          <div class="container ">
+                 <h1 id="grd"><u>Grading</u></h1>
+
+           
+                   <div class="star">
+                       <input type="radio" name="rating" id="rate-5">
+                       <label for="rate-5" class="fas fa-star" onclick="grade(5)"></label>
+                       <input type="radio" name="rating" id="rate-4">
+                       <label for="rate-4" class="fas fa-star"  onclick="grade(4)"></label>
+                       <input type="radio" name="rating" id="rate-3" >
+                       <label for="rate-3" class="fas fa-star" onclick="grade(3)"></label>
+                       <input type="radio" name="rating" id="rate-2" >
+                       <label for="rate-2"  class="fas fa-star" onclick="grade(2)"></label>
+                       <input type="radio" name="rating" id="rate-1" >
+                       <label for="rate-1" class="fas fa-star" onclick="grade(1)"></label>
+                       <form action="#">
+                           <header></header>
+                           <div class="textarea">
+                               <textarea cols="20" placeholder="Comments/Rmarks"></textarea>
+                           </div>
+                           <div class="btn">
+                               <button class="btn btn-light">send</button>
+                           </div>
+                       </form>
+                   </div>
+          </div>
+        
+    </div>
+</div>
+    
+    
+    
+    <script type="text/javascript" src="project_js.js"></script>
+</body>
+</html>
