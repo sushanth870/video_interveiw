@@ -1,0 +1,22 @@
+#emp_img{
+
+    box-shadow: 0 4px 8px 0 rgba(58, 56, 56, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    float: left;
+    margin-top:45px;
+    margin-left:20%;
+    display: block;
+}
+#name
+{
+    text-align: center; 
+    padding: 5px;
+    font-family: 'Source Serif Pro', serif;
+         float: left;margin-left:19%;
+     margin-top: 4px;
+}
+
+.bod{
+    border: 200px;
+    border-color: black;
+}
