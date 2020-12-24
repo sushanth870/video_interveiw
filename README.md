@@ -1,4 +1,5 @@
 # video_interveiw
+<img src="https://github.com/sushanth870/video_interveiw/blob/main/Screenshot%20(141).png">
 ****OPEN main_top.html for exact view ***
 
 This is a frontend website of taking interveiw which allows HR to grade there answers to each question.
